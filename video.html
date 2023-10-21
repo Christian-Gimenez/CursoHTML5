@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Incrustar video en HTML</title>
+    </head>
+    <body style="background-color:white">
+        <h1>VIDEOS en HTML</h1>
+        <!--Forma 1-->
+        <video src="vids/fragmento-wayfarer.mp4" controls autoplay muted width="500px ">
+            Tu navegador no soporta la etiqueta video
+        </video>
+
+        <!--Forma 2-->
+        <video controls width="500px" poster="images/studio-ghibli-museum-tokyo.jpg">
+            <source src="vids/fragmento-wayfarer.mp4" type="video/mp4" />
+            <source src="vids/fragmento-wayfarer.mov" type="video/mov" />
+            No es compatible con tun navegador
+        </video>
+    </body>
+</html>

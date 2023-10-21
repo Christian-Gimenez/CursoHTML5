@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto</title>
+    </head>
+    <body>
+        <header>
+            <h1>Proyecto HTML</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                    <li><a href="dieta.html">Dieta</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <main>
+            <section id="contacto">
+                <h2>Contacto</h2>
+                    <form>
+                        <fieldset>
+                            <legend>Datos de contacto</legend>
+
+                            <div>
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" placeholder="Nombre..." required />
+                            </div>
+
+                            <div>
+                                <label for="apellidos">Apellidos</label>
+                                <input type="text" id="apellidos" placeholder="Apellidos..." required />
+                            </div>
+
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required placeholder="ejemplo@mail.com" />
+                            </div>
+
+                            <div>
+                                <label for="edad">Edad:</label>
+                                <input type="number" id="edad" required />
+                            </div>
+
+                            <!--Cómo hice yo el campo para la edad
+                            <div>
+                                <p>Género:</p>
+                                <input type="radio" value="mujer" id="mujer" name="genero">
+                                <label for="mujer">Mujer</label>
+                                            
+                                <input type="radio" value="hombre" id="hombre" name="genero">
+                                <label for="hombre">Hombre</label>
+                                               
+                                <input type="radio" value="otro" id="otro" name="genero">
+                                <label for="otro-genero">Otro (trans, genero fluido, no binario, etc.)</label>
+                            </div>
+                            -->
+
+                            <div>
+                                <label for="genero">Genero:</label>
+                                <select id="genero">
+                                    <option value="hombre">Hombre</option>
+                                    <option value="mujer">Mujer</option>
+                                    <option value="otro">Otro (trans, genero fluido, no binario, etc.)</option>
+                                </select>
+                            </div>
+                 
+                            <div>
+                                <label for="motivo">Motivo de contacto:</label><br/>
+                                <textarea id="motivo" placeholder="Quería informarme sobre..." required ></textarea>
+                            </div>
+
+                            <div>
+                                <input type="submit" value="Enviar" />
+                            </div>
+
+                            <div>
+                                <input type="reset" value="Limpiar formulario"
+                            </div>
+
+
+                        </fieldset>
+                        
+                    </form>
+
+            </section>
+            <hr/>
+        </main>
+
+        <footer>
+            Proyecto de HTML con ejercicios de Víctor Robles Web &copy 2022.
+        </footer>
+    </body>
+</html>
